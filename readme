@@ -1,0 +1,16 @@
+1、python环境迁移时，修改venv(虚拟环境)中的pyvenv.cfg文件内容
+    home = python的安装路径
+    include-system-site-packages = false
+    version = 3.7.3
+2、Kafka环境配置：
+    修改hosts文件（C:\Windows\System32\drivers\etc），在最后加上Kafka的IP和域名，
+    例如：192.168.0.129 data07
+          192.168.0.130 data08
+          192.168.0.131 data09
+     注意：最好配置Kafka集群的所有IP
+
+
+注意：
+1、hosts修改无权限保存，或保存为了其它文件格式
+   1）修改hosts文件属性，取消只读
+   2）使用管理员权限打开编辑软件，在软件中打开hosts文件，编辑保存即可
